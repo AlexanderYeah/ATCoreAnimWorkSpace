@@ -36,7 +36,13 @@ SDK已经通过UIView的高级API间接地使得动画变得简单的多。但�
 
 * contentsScale 属性决定了寄宿图和视图大小的比例，默认情况下是1.0f的浮点数。如果设置了contentGravity在对其进行设置,则不会有明显的变化  
 
-* contentsRect 属性允许我们在图层边框里面显示寄宿图的一个子区域。contentRect 使用的是单位的坐标，单位在0 到 1 之间。默认的是 {0,0,1,1} 
+* contentsRect 属性允许我们在图层边框里面显示寄宿图的一个子区域。contentRect 使用的是单位的坐标，单位在0 到 1 之间。默认的是 {0,0,1,1}   
+
+* 默认的是   
+![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession1/rect1.png)  
+
+* 修改为{0,0,0.5,0.5}  
+![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession1/rect2.jpg)  
 
 
 
