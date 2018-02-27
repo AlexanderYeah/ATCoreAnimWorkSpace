@@ -31,15 +31,17 @@
 //	[samView1.layer addSublayer:blueLayer];
 	
 	
+	
 	// 给layer 添加一个图片
 	UIImage *showImg = [UIImage imageNamed:@"12.jpg"];
 	samView1.layer.contents = (__bridge id)showImg.CGImage;
-	
-	samView1.layer.contentsGravity = kCAGravityResizeAspect;
+	 samView1.layer.contentsGravity = kCAGravityResizeAspect;
 	// samView1.layer.contentsScale = 0.2f;
-	
 	// contentsRect
-	samView1.layer.contentsRect = CGRectMake(0, 0, 0.5, 0.5);
+	// samView1.layer.contentsRect = CGRectMake(0, 0, 0.5, 0.5);
+	
+	// contentsCenter
+	samView1.layer.contentsCenter = CGRectMake(0.5, 0.5, 0.5, 0.5);
 }
 
 
