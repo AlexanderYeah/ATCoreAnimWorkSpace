@@ -44,8 +44,32 @@ anchorPoint 位于图层的中心点 所以图层将会以这个点为中心位�
 ![22](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/anchor2.png)  
 
 
-### 坐标系
+### 坐标系   
+CALayer还有另外两个属性，zPosition和anchorPointZ，二者都是在Z轴上描述图层位置的浮点类型。
+```  
+	self.demoView3 = [[UIView alloc]initWithFrame:CGRectMake(100, 200, 200, 200)];
+	self.demoView3.backgroundColor = [UIColor redColor];
+	[self.view addSubview:self.demoView3];
+	
+	
+	
+	self.demoView4 = [[UIView alloc]initWithFrame:CGRectMake(200, 300, 200, 200)];
+	self.demoView4.backgroundColor = [UIColor greenColor];
+	[self.view addSubview:self.demoView4];
+	
+	
+	// 以上的布局 绿色的视图会显示在红色的上面
+	// 通过改变的layer的zPosition 来进行改变显示的位置
+	 self.demoView3.layer.zPosition = 1.0f;  
+```  
 
+改变之前  
+
+![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/zAnchor1.png)    
+
+改变之后  
+
+![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/zAnchor2.png)
     
     
 ### Hit Testing
@@ -55,6 +79,7 @@ CALayer 不能直接处理触摸事件或者手势，但是有一些列方法来
 * hitTest
 
 -containsPoint:接受一个在本图层坐标系下的CGPoint，如果这个点在图层frame范围内就返回YES  
+![11](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/hit_test.png)
 
 
     
