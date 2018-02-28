@@ -30,7 +30,7 @@ anchorPoint 位于图层的中心点 所以图层将会以这个点为中心位�
 	// 就表示 demoView2 这个图层 左上角这个点 移动到 50 50 这个位置
 	 self.demoView2.layer.anchorPoint = CGPointMake(0, 0);  
    
-   ```  
+ ```  
    
   添加一个图层到另外一个图层上，绿色图层显示到什么位置，由position属性决定;假设绿色图层的position是（50，50）,
   到底把红色图层的哪个点移动到（100，100）的坐标位置，这个点就是锚点。 抹点默认值是（0.5，0.5）  
@@ -41,4 +41,21 @@ anchorPoint 位于图层的中心点 所以图层将会以这个点为中心位�
 
 * 修改锚点 设置position 之后  
 
-![22](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/anchor2.png)
+![22](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession2/anchor2.png)  
+
+
+### 坐标系
+
+    
+    
+### Hit Testing
+
+CALayer 不能直接处理触摸事件或者手势，但是有一些列方法来进行处理事件。
+* containsPoint:  
+* hitTest
+
+-containsPoint:接受一个在本图层坐标系下的CGPoint，如果这个点在图层frame范围内就返回YES  
+
+
+    
+    
