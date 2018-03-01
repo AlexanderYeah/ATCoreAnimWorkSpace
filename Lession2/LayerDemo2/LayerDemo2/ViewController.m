@@ -41,8 +41,6 @@
 	self.demoView1 = [[UIView alloc]initWithFrame:CGRectMake(100, 200, 200, 200)];
 	self.demoView1.backgroundColor = [UIColor redColor];
 	[self.view addSubview:self.demoView1];
-	
-
 	self.demoView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
 	self.demoView2.backgroundColor = [UIColor greenColor];
 	[self.demoView1 addSubview:self.demoView2];
@@ -66,7 +64,6 @@
 	self.demoView4.backgroundColor = [UIColor greenColor];
 	[self.view addSubview:self.demoView4];
 	
-	
 	// 以上的布局 绿色的视图会显示在红色的上面
 	// 通过改变的layer的zPosition 来进行改变显示的位置
 	 self.demoView3.layer.zPosition = 1.0f;
@@ -81,7 +78,6 @@
 	self.demoView5.backgroundColor = [UIColor redColor];
 	[self.view addSubview:self.demoView5];
 	
-	
 	self.demoLayer1 = [CALayer layer];
 	self.demoLayer1.frame = CGRectMake(50, 50, 100, 100);
 	[self.demoView5.layer addSublayer:self.demoLayer1];
@@ -95,12 +91,10 @@
 	
 	// 将点击的点转demoView5 的 layer 中的点
 	point = [self.demoView5.layer convertPoint:point fromLayer:self.view.layer];
-	
 	// 如果点击的点在demoView5的 layer 中的话
 	if ([self.demoView5.layer containsPoint:point]) {
 		
 		point = [self.demoLayer1 convertPoint:point fromLayer:self.demoView5.layer ];
-		
 		if ([self.demoLayer1 containsPoint:point]) {
 			[self showInfo:@"蓝色view内"];
 		}else{
@@ -108,9 +102,6 @@
 		}
 		
 	}
-	
-	
-	
 	
 
 }
