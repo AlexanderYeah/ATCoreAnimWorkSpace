@@ -34,7 +34,9 @@
  
  * layer1 背景颜色是红色的 ，layer2 背景颜色是绿色的，layer2 添加layer1上面，给layer2 添加一个动画 strokeEnd 属性。 
  
- * 利用CALayer的 mask 属性，创建一个CATextLayer 添加到layer2 上面，然后使得layer1.mask = layer3 就可以实现。  
+ * 利用CALayer的 mask 属性，创建一个CATextLayer 添加到layer2 上面，然后使得layer1.mask = layer3 就可以实现。    
+ 
+ ![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession5/lyric.gif)
  
  
  
