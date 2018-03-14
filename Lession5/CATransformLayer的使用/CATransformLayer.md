@@ -1,0 +1,2 @@
+# CATransformLayer 
+CATransformLayer 不同于普通的CALayer，因为它不能显示自己的内容，只有当存在子图层的时候才会真正的存在。CALayer 并不平面化它的子图层，它能够构造一个层级的3D结构。
