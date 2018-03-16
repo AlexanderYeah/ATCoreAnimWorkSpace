@@ -53,3 +53,5 @@ locations 数组定义了渐变颜色不同的位置
 
 }
 ```
+
+![](https://github.com/AlexanderYeah/ATCoreAnimWorkSpace/blob/master/Lession5/CAGradientLayer%E7%9A%84%E4%BD%BF%E7%94%A8/gradient.jpg)
