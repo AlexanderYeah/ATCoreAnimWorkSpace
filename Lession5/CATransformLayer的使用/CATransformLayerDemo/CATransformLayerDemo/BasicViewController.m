@@ -34,28 +34,21 @@
 	// 绕着y 轴旋转 45 度
 	c1t = CATransform3DRotate(c1t, - M_PI_4, 0, 1, 0);
 	
-	
-	
 	CALayer *layer = [self cubeWithTransform:c1t];
 	[self.containerView.layer addSublayer:layer];
 	
 	
 	
 	CATransform3D trans3D = CATransform3DMakeRotation(M_PI * 4 , 0,1, 0);
-	
 	CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
 	anim.duration = 10.0f;
 	anim.autoreverses = YES;
 	anim.repeatCount = MAXFLOAT;
-	
 	anim.toValue = [NSNumber numberWithFloat:6 * M_PI];
-	
-	
 	CABasicAnimation *anim2 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
 	anim2.duration = 10.0f;
 	anim2.autoreverses = YES;
 	anim2.repeatCount = MAXFLOAT;
-	
 	anim2.toValue = [NSNumber numberWithFloat:6 * M_PI];
 	
 	// [layer addAnimation:anim forKey:@"transform.rotation.x"];
